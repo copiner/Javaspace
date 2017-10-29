@@ -4,7 +4,7 @@ public class TestBufferStream{
 	public static void main(String args[]){
 		try{
       FileInputStream fis =
-        new FileInputStream("e:\\java\\init\\008\\buffered\\CircleTest.java");
+        new FileInputStream("e:\\Javaspace\\init\\008\\buffered\\CircleTest.java");
       BufferedInputStream bis =
         new BufferedInputStream(fis);
       int c = 0;
