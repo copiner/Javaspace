@@ -1,0 +1,14 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(){
+  string st("The expense of spirit\n");
+
+  cout<<"The size: "<<st.size();
+
+  if(st.empty()){
+    cout<<"empty"<<endl;
+  }
+}
