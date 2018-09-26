@@ -1,0 +1,15 @@
+#include<iostream>
+#include "stu.h"
+using namespace std;
+
+int main(){
+
+  Student Bi;
+  cout<<"Bi.name: "<<Bi.name<<endl;
+  cout<<"Bi.average: "<<Bi.average<<endl;
+
+  Student Bii(1,"Luna",90,89,91);
+  cout<<"Bii.name: "<<Bii.name<<endl;
+  cout<<"Bii.average: "<<Bii.average<<endl;  
+  return 0;
+}
