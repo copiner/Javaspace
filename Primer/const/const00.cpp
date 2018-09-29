@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void main(){
+int main(){
   //const double *cptr;
   //cptr 是一个    指向 double 类型的 被定义成 const的对象的    指针
   //可以重新赋值 cptr 使其指向不同的对象 但不能修改 cptr 指向的对象
@@ -32,7 +32,9 @@ void main(){
   cout<<"pc : "<<pc<<endl;
   cout<<"*pc : "<<*pc<<endl;
 
-  //可以重新赋值 pc 使其指向不同的对象 但不能修改 pc 指向的对象
+  //可以重新赋值 pc 使其指向不同的对象 但不能修改 pc 指向的对象,
+  //因为在运行程序的任意一点上，编译器不能确定指针所指向的实际对象
   //*pc = 3.14159;
   return 0;
 }
+

@@ -1,0 +1,12 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main(){
+  
+}
+
+vector<int>::const_iterator look_up(const vector<int> &vec, int value, int &occurs){
+
+}

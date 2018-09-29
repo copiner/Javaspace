@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+const maxCard = 100;
+
+class Set{
+  int elems[maxCard];
+  int card;
+public:
+  Set(){ card=0;}
+  friend Set operator *(Set,Set);
+  // friend Set operator *(Set &,Set &);
+}

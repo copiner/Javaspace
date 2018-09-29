@@ -10,4 +10,10 @@ int main(){
   for(t = a.begin(); t != a.end(); t++){
     cout <<*t<<" ";
   }
+  cout <<endl;
+  
+  for(vector<int>::iterator it = a.begin(); it!= a.end(); ++it){
+    cout<<*it<<' ';
+  }
+  return 0;
 }
