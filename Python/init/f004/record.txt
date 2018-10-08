@@ -1,0 +1,13 @@
+calvin: hi!
+rose: hi!
+=============================
+calvin: where are you going ?
+rose: I'm going to American.
+==============================
+calvin: what you are going to do?
+rose: watch a nba
+==============================
+calvin: nice
+rose: see you later
+==============================
+calvin: yes, googbye
