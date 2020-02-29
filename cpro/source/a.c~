@@ -1,0 +1,3 @@
+/*
+  IPv4套接字地址结构，它以sockaddr_in命名，定义在《netinet/in.h>头文件中
+*/
