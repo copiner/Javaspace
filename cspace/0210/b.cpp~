@@ -1,0 +1,55 @@
+/*
+constructor destructor
+ */
+
+#include <iostream>
+#include <string>
+
+class BaseClass
+{
+public:
+  BaseClass();
+  ~BaseClass();
+
+  void doSth();
+};
+
+class SubClass : public BaseClass
+{
+  SubClass();
+  ~SubClass();
+};
+
+BaseClass::BaseClass()
+{
+  std::cout<<"base constructor...\n";
+}
+
+BaseClass::~BaseClass()
+{
+  std::cout<<"base destructor...\n";
+}
+
+void BaseClass::doSth()
+{
+  std::cout << "I do sth...\n";
+}
+
+SubClass::SubClass()
+{
+  std::cout<<"sub construtor...\n";
+}
+
+SubClass::~SubClass()
+{
+  std::cout<<"sub destructor...\n";
+}
+
+
+int main()
+{
+  SubClass sub;
+  sub.doSth();
+
+  return 0;
+}

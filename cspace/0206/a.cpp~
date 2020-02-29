@@ -1,0 +1,26 @@
+/*
+  data type
+*/
+
+#include <iostream>
+
+int main()
+{
+  int num[10];
+  
+  std::cout << "input 10 int num!\n";
+
+  for(int i = 0; i < 10; i++){
+    std::cout<<"input the " << i+1 << "num: ";
+    std::cin >> num[i];
+  }
+
+  int total = 0;
+  for(int j=0;j<10;j++){
+    total += num[j];
+  }
+
+  std::cout << "The total: "<<total;
+  std::cout << "The averal: "<<total/10;
+  return 0;
+}

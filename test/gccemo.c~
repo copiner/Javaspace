@@ -1,0 +1,17 @@
+/*
+gcc getop.c gccemo.c -o output.out
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "getop.h"
+
+int main()
+{
+  int a = 9;
+  getch(a);
+  getop(a);
+  ungetch(a);
+
+  return 0;
+}

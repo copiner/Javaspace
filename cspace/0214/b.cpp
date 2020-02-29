@@ -1,0 +1,39 @@
+
+/*
+
+*/
+
+#include <iostream>
+
+class Animal
+{
+public:
+  void sleep()
+  {
+    std::cout<<"animal sleep\n"<<std::endl;
+  }
+
+  virtual void breathe()
+  {
+    std::cout<<"animal breathe\n"<<std::endl;
+  }
+};
+
+class Fish : public Animal
+{
+public:
+  void breathe()
+  {
+    std::cout<<"fish bubble\n"<<std::endl;
+  }
+};
+
+int main()
+{
+  Fish fh;
+  Animal *ai = &fh;
+
+  ai -> breathe();
+
+  return 0;
+}

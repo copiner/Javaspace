@@ -1,0 +1,112 @@
+/*
+  abstruct function
+*/
+#include <iostream>
+
+class Pet
+{
+public:
+  Pet(std::string tname);
+
+  ~Pet();
+  virtual void eat();
+  virtual void sleep();
+  virtual void play() = 0;
+
+protected:
+  std::string name;
+
+};
+
+class Dog : public Pet
+{
+public:
+  Dog(std::string tname);
+
+  void bark();
+  void play();
+};
+
+class Cat : public Pet
+{
+public:
+  Cat(std::string tname);
+
+  void climb();
+  void play();
+};
+
+
+Pet::Pet(std::string tname)
+{
+  name = tname;
+}
+
+Pet::~Pet()//destructor is virtual function
+{
+  std::cout<<"one pet.."<<name<<" died!\n";
+}
+
+void Pet::play()
+{
+  std::cout<<name<<" Pet playing\n";
+}
+
+void Pet::sleep()
+{
+  std::cout<<name<<" pet sleeping...\n";
+}
+
+void Pet::eat()
+{
+  std::cout<<name<<" pet eating...\n";
+}
+
+Dog::Dog(std::string tname):Pet(tname)
+{
+  std::cout<<"Dog constructor: "<<name<<std::endl;
+}
+
+void Dog::bark()
+{
+  std::cout<<name<<" dog barking...\n";
+}
+
+void Dog::play()
+{
+  //  Pet::play();
+  std::cout<<name<<" dog playing...\n";
+}
+
+Cat::Cat(std::string tname):Pet(tname)
+{
+    std::cout<<"Cat constructor: "<<name<<std::endl;
+}
+
+void Cat::climb()
+{
+  std::cout<<name<<" cat climbing...\n";
+}
+
+void Cat::play()
+{
+  //  Pet::play();
+  std::cout<<name<<" cat playing...\n";
+}
+
+
+int main()
+{
+
+  Pet *dog = new Dog("jeffy");
+  Pet *cat = new Cat("marry");
+
+  dog -> play();
+
+  cat -> play();
+
+  delete cat;
+  delete dog;
+
+  return 0;
+}

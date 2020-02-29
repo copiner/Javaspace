@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int getch(int a)
+{
+  return 0;
+}
+
+int getop(int b)
+{
+  return 0;
+}
+
+int ungetch(int c)
+{
+  return 0;
+}
